@@ -4,6 +4,7 @@
 # https://github.com/concourse/docker-image-resource/blob/master/assets/common.sh
 
 set -o errexit -o pipefail -o nounset
+set -x
 
 # Waits DOCKERD_TIMEOUT seconds for startup (default: 60)
 DOCKERD_TIMEOUT="${DOCKERD_TIMEOUT:-60}"
